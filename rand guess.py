@@ -1,6 +1,5 @@
 import time
-from random import randint, choice
-
+import random
 
 def error_check(x):
     try:
@@ -15,7 +14,7 @@ def error_check(x):
 
 
 def game():
-    game_answer = randint(1,100)
+    game_answer = random.randint(1,100)
     game_start_time = time.time()
     higher_statements = ["Nope, higher! ", "HIGHER ", "Too low... ", "Go higher! "]
     lower_statements = ["Lower!! ", "TOO HIGH! ", "Too big... ", "Go lower "]
@@ -32,10 +31,10 @@ def game():
     while guess != game_answer:
         
         if guess < game_answer:
-            print (choice(higher_statements))
+            print (random.choice(higher_statements))
     
         elif guess > game_answer:
-            print(choice(lower_statements))
+            print(random.choice(lower_statements))
 
         guess = input("Next guess? ")
         
