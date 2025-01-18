@@ -1,0 +1,31 @@
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Logs and debug files
+*.log
+*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# VS Code settings (optional)
+.vscode/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.spec
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Other IDE settings
+.idea/
